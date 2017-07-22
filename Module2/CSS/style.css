@@ -1,0 +1,120 @@
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+  font-family: Helvetica;
+  color: black;
+  text-align: center;
+}
+
+p {
+  display: block;
+  font-family: Helvetica;
+  color: black;
+  width: 95%;
+  overflow: auto;
+  padding-right: 5%;
+  margin-left: 15px;
+  margin-top: 0px;
+  margin-right: 0px;
+}
+
+.container {
+  background-color: #CECECE;
+  margin: 5px 10px 15px 10px;
+  margin-bottom: 15px;
+  font-family: Helvetica;
+  color: black;
+  border: 1px solid black;
+}
+
+.box-heading {
+  float: right;
+  position: relative;
+  right: -1px;
+  top: -1px;
+  font-family: Helvetica;
+  color: black;
+  min-width: 120px;
+  margin-top: -0px;
+  margin-bottom: 15px;
+  margin-right: 0px;
+  margin-left: 0px;
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+  font-size: 125%;
+}
+
+.box-1 {
+  background-color: #24b0c9;
+}
+
+.box-2 {
+  background-color: #c56ed1;
+}
+
+.box-3 {
+  background-color: #71d685;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Desktop version **********/
+@media (min-width: 992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3 {
+    float: left;
+  }
+  .col-lg-1 {
+    width: 33.33%;
+  }
+  .col-lg-2 {
+    width: 33.33%;
+  }
+  .col-lg-3 {
+    width: 33.33%;
+  }
+}
+
+/********** Tablet View **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2, .col-md-3 {
+    float: left;
+  }
+  .col-md-1 {
+    width: 50%;
+  }
+  .col-md-2 {
+    width: 50%;
+  }
+  .col-md-3 {
+    width: 100%;
+  }
+}
+
+/********** Mobile View **********/
+@media (max-width: 767px) {
+  .col-sm-1, .col-sm-2, .col-sm-3 {
+    float: left;
+  }
+  .col-sm-1 {
+    width: 100%;
+  }
+  .col-sm-2 {
+    width: 100%;
+  }
+  .col-sm-3 {
+    width: 100%;
+  }
+}
